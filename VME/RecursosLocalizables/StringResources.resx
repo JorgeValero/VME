@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aceptar" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="anoDeNacimientoBienvenida" xml:space="preserve">
+    <value>Año de nacimiento:</value>
+  </data>
+  <data name="apellidosBienvenida" xml:space="preserve">
+    <value>Apellidos:</value>
+  </data>
+  <data name="atras" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="cegueraLabelColorBienvenida" xml:space="preserve">
+    <value>Prueba de visión</value>
+  </data>
+  <data name="detener" xml:space="preserve">
+    <value>Detener</value>
+  </data>
+  <data name="estadoAltavocesBienvenida" xml:space="preserve">
+    <value>Estado de los altavoces</value>
+  </data>
+  <data name="estadoKinectBienvenida" xml:space="preserve">
+    <value>Estado de la Kinect</value>
+  </data>
+  <data name="estadoMicrofonoBienvenida" xml:space="preserve">
+    <value>Estado del micrófono</value>
+  </data>
+  <data name="estadoPantallaTactilBienvenida" xml:space="preserve">
+    <value>Estado de pantalla táctil</value>
+  </data>
+  <data name="felicidadesBienvenida" xml:space="preserve">
+    <value>Felicidades has completado la configuración inicial</value>
+  </data>
+  <data name="fin" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="finalBienvenida" xml:space="preserve">
+    <value>de forma satisfactoria</value>
+  </data>
+  <data name="fisicoCirculoMenuPrincipal" xml:space="preserve">
+    <value>Pruebas físicas</value>
+  </data>
+  <data name="guardarImagen" xml:space="preserve">
+    <value>Guardar Imagen</value>
+  </data>
+  <data name="iniciar" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+  <data name="labelBienvenida" xml:space="preserve">
+    <value>Hi! Select your language</value>
+  </data>
+  <data name="labelBienvenida1" xml:space="preserve">
+    <value>Hola! Selecciona tu idioma</value>
+  </data>
+  <data name="labelBienvenida3" xml:space="preserve">
+    <value>Hablanos de ti...</value>
+  </data>
+  <data name="labelBienvenida4" xml:space="preserve">
+    <value>Queremos conocerte un poco más</value>
+  </data>
+  <data name="movilidad2Bienvenida" xml:space="preserve">
+    <value>Sí, tengo un problema que reduce mi movilidad de forma considerable.</value>
+  </data>
+  <data name="movilidad3Bienvenida" xml:space="preserve">
+    <value>Sí, tengo algún tipo de minusvalía física.</value>
+  </data>
+  <data name="movilidad4Bienvenida" xml:space="preserve">
+    <value>No, pero debido a alguna razón no puedo hacer determinados esfuerzos.</value>
+  </data>
+  <data name="movilidad5Bienvenida" xml:space="preserve">
+    <value>No, no tengo ningún problema de movilidad.</value>
+  </data>
+  <data name="movilidadBienvenida" xml:space="preserve">
+    <value>¿Tienes algún problema que te dificulte la movilidad?</value>
+  </data>
+  <data name="nombreBienvenida" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="pesoBienvenida" xml:space="preserve">
+    <value>Peso (Kg):</value>
+  </data>
+  <data name="probar" xml:space="preserve">
+    <value>Probar</value>
+  </data>
+  <data name="Prueba1MenuPrincipalFisica" xml:space="preserve">
+    <value>Prueba de reflejos</value>
+  </data>
+  <data name="Prueba1MenuPrincipalPsicologica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba2MenuPrincipalFisica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba2MenuPrincipalPsicologica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba3MenuPrincipalFisica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba3MenuPrincipalPsicologica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba4MenuPrincipalFisica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba4MenuPrincipalPsicologica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba5MenuPrincipalFisica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prueba5MenuPrincipalPsicologica" xml:space="preserve">
+    <value />
+  </data>
+  <data name="psicologicoCirculoMenuPrincipal" xml:space="preserve">
+    <value>Pruebas psicologicas</value>
+  </data>
+  <data name="reguKine" xml:space="preserve">
+    <value>Regular Kinect</value>
+  </data>
+  <data name="regularKinect" xml:space="preserve">
+    <value>Regular Kinect</value>
+  </data>
+  <data name="siguiente" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="siguienteSalirBienvenida" xml:space="preserve">
+    <value>Pulsa siguiente para acceder al menú principal</value>
+  </data>
+  <data name="tabColores" xml:space="preserve">
+    <value>Colores</value>
+  </data>
+  <data name="tabIdioma" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="tabInformacion" xml:space="preserve">
+    <value>Informacion</value>
+  </data>
+  <data name="tabMovilidad" xml:space="preserve">
+    <value>Problemas Movilidad</value>
+  </data>
+  <data name="tabTecnologia" xml:space="preserve">
+    <value>Tecnologia</value>
+  </data>
+  <data name="tamanoSlider" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VMEConfiguracionInicialTitulo" xml:space="preserve">
+    <value>Configuracion Inicial</value>
+  </data>
+  <data name="VMEErrorTitulo" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="VMEInformacionTitulo" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="VMESugerenciaTitulo" xml:space="preserve">
+    <value>Sugerencia</value>
+  </data>
+  <data name="altavocesBienvenido" xml:space="preserve">
+    <value>Altavoces</value>
+  </data>
+  <data name="dispositivosUtilizarLabel" xml:space="preserve">
+    <value>Dispositivos a utilizar</value>
+  </data>
+  <data name="faltanParametros" xml:space="preserve">
+    <value>Falta algún parámetro de información por introducir</value>
+  </data>
+  <data name="microfonoBienvenido" xml:space="preserve">
+    <value>Micrófono</value>
+  </data>
+  <data name="tabFin" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="cuerpoDetectado" xml:space="preserve">
+    <value>Cuerpo detectado</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Seleccione un tipo de interfaz</value>
+  </data>
+  <data name="RegularKinectBienvenida" xml:space="preserve">
+    <value>Para regular la kinect debe detectar tu cuerpo de pies a cabeza</value>
+  </data>
+  <data name="regularKinectBienvenida2" xml:space="preserve">
+    <value>Regular kinect</value>
+  </data>
+  <data name="tamanoLetra" xml:space="preserve">
+    <value>Tamaño letra:</value>
+  </data>
+  <data name="Aciertos" xml:space="preserve">
+    <value>Aciertos:</value>
+  </data>
+  <data name="analisisPruebaReflejosBueno" xml:space="preserve">
+    <value>Tienes unos grandes reflejos, !eres un lince¡</value>
+  </data>
+  <data name="analisisPruebaRelejosMalo" xml:space="preserve">
+    <value>No tienes muy buenos reflejos, esto deberias de mirartelo.</value>
+  </data>
+  <data name="Fallos" xml:space="preserve">
+    <value>Fallos:</value>
+  </data>
+  <data name="felicidadesPruebaReflejos" xml:space="preserve">
+    <value>Felicidades, has completado la prueba de reflejos</value>
+  </data>
+  <data name="instrucciones1Reflejos" xml:space="preserve">
+    <value>A continución vamos a comprobar cómo estás de reflejos, para ello te pondremos una serie de botones (rojos y verdes) y tendras que pulsar los botones verdes.</value>
+  </data>
+  <data name="instrucciones2Reflejos" xml:space="preserve">
+    <value>Si pulsas un botón rojo se te contabilizará puntos negativos, si aciertas sumaras uno. La prueba se repetirá 5 veces y al final te daremos los resultados.</value>
+  </data>
+  <data name="instrucciones3Reflejos" xml:space="preserve">
+    <value>Por favor, indique que quiere usar para realizar la prueba:</value>
+  </data>
+  <data name="resultadoPruebaReflejos1" xml:space="preserve">
+    <value>Éstos son tus resultados de la prueba:</value>
+  </data>
+  <data name="salirSinGuardar" xml:space="preserve">
+    <value>Salir sin guardar</value>
+  </data>
+  <data name="salirYGuardar" xml:space="preserve">
+    <value>Salir y guardar</value>
+  </data>
+  <data name="VMEPruebaReflejosTitulo" xml:space="preserve">
+    <value>Reflejos</value>
+  </data>
+  <data name="tabVista" xml:space="preserve">
+    <value>Vista de la interfaz</value>
+  </data>
+  <data name="Instrucciones1Daltonico" xml:space="preserve">
+    <value>A continución vamos a comprobar cómo estás de reflejos, para ello te pondremos una serie de botones (amarillos y azules) y tendras que pulsar los botones azules.</value>
+  </data>
+  <data name="Instrucciones2Daltonico" xml:space="preserve">
+    <value>Si pulsas un botón amarillo se te contabilizará puntos negativos, si aciertas sumaras uno. La prueba se repetirá 5 veces y al final te daremos los resultados.</value>
+  </data>
+  <data name="interfazClara" xml:space="preserve">
+    <value>Interfaz clara</value>
+  </data>
+  <data name="interfazOscura" xml:space="preserve">
+    <value>Interfaz oscura</value>
+  </data>
+  <data name="mensajeSalir" xml:space="preserve">
+    <value>¿Estás seguro que deseas salir?</value>
+  </data>
+  <data name="confirmarSalir" xml:space="preserve">
+    <value>Confirmar cierre</value>
+  </data>
+  <data name="KinectNoDetect" xml:space="preserve">
+    <value>Kinect no detectada</value>
+  </data>
+  <data name="KinectDetect" xml:space="preserve">
+    <value>Kinect detectada</value>
+  </data>
+  <data name="acercaDe" xml:space="preserve">
+    <value>Acerca de...</value>
+  </data>
+  <data name="autores" xml:space="preserve">
+    <value>Autores:</value>
+  </data>
+  <data name="cerrar" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="nombreCompania" xml:space="preserve">
+    <value>Nombre de la compañia:</value>
+  </data>
+  <data name="nombrePrograma" xml:space="preserve">
+    <value>Nombre del programa:</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Versión:</value>
+  </data>
+  <data name="Reflexes" xml:space="preserve">
+    <value>Reflejos</value>
+  </data>
+  <data name="ReconocimientoNoRecon" xml:space="preserve">
+    <value>No se ha reconocido el diccionario.</value>
+  </data>
+  <data name="ManoCabeza" xml:space="preserve">
+    <value>Colocate sobre la línea y coloca tu mano derecha en la cabeza para continuar..</value>
+  </data>
+  <data name="Instrucciones" xml:space="preserve">
+    <value>Instrucciones</value>
+  </data>
+  <data name="exportarDatos" xml:space="preserve">
+    <value>Guardar QR</value>
+  </data>
+  <data name="labelPruebas" xml:space="preserve">
+    <value>Pruebas realizadas</value>
+  </data>
+  <data name="VMEInformacionUsuarioTitulo" xml:space="preserve">
+    <value>Información del usuario</value>
+  </data>
+  <data name="importarDatos" xml:space="preserve">
+    <value>Importar Datos</value>
+  </data>
+  <data name="informacionImportarDatos" xml:space="preserve">
+    <value>Por favor, coloque el QR delante de la cámara Kinect</value>
+  </data>
+  <data name="IdiomaVoz" xml:space="preserve">
+    <value>Debes seleccionar el idioma para activar el reconocimiento de voz.</value>
+  </data>
+  <data name="pruebaReflejosBoton1" xml:space="preserve">
+    <value>Uno</value>
+  </data>
+  <data name="pruebaReflejosBoton2" xml:space="preserve">
+    <value>Dos</value>
+  </data>
+  <data name="pruebaReflejosBoton3" xml:space="preserve">
+    <value>Tres</value>
+  </data>
+  <data name="pruebaReflejosBoton4" xml:space="preserve">
+    <value>Cuatro</value>
+  </data>
+  <data name="pruebaReflejosBoton5" xml:space="preserve">
+    <value>Cinco</value>
+  </data>
+  <data name="pruebaReflejosBoton6" xml:space="preserve">
+    <value>Seis</value>
+  </data>
+  <data name="pruebaReflejosBoton7" xml:space="preserve">
+    <value>Siete</value>
+  </data>
+  <data name="pruebaReflejosBoton8" xml:space="preserve">
+    <value>Ocho</value>
+  </data>
+  <data name="pruebaReflejosRaton" xml:space="preserve">
+    <value>Raton</value>
+  </data>
+  <data name="pruebaReflejosTactil" xml:space="preserve">
+    <value>Tactil</value>
+  </data>
+  <data name="acercaDe1" xml:space="preserve">
+    <value>acerca de</value>
+  </data>
+  <data name="configuracion" xml:space="preserve">
+    <value>configuracion</value>
+  </data>
+  <data name="opciones" xml:space="preserve">
+    <value>opciones</value>
+  </data>
+  <data name="usuario" xml:space="preserve">
+    <value>usuario</value>
+  </data>
+</root>

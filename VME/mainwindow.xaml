@@ -1,0 +1,56 @@
+﻿<Window x:Class="VME.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VME"
+        mc:Ignorable="d"
+        Title="VME - Alpha 0.1" Height="855.194" Width="1412.039" Loaded="Window_Loaded" WindowState="Maximized" WindowStartupLocation="CenterScreen" Icon="Resources/logotipoVME-sin fondos.ico" Closing="Window_Closing">
+    <Grid x:Name="gridMain" Background="#FF1D1B1B">
+        <k:KinectRegion Name="ZonaCursor" Grid.ColumnSpan="2">
+            <Grid>
+                <k:KinectUserViewer Name="visorPersonaMenuPrincipal" ImageBackground="WhiteSmoke" UserColoringMode="HighlightPrimary" PrimaryUserColor="Green"  Height="180" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="234"/>
+                <k:KinectCircleButton Name="fisicoCirculoMenuPrincipal" Click="fisicoCirculoMenuPrincipal_Click" Label="     Pruebas físicas      " Height="316" Margin="264,0,770,189" Width="Auto" Foreground="White" Background="#FF1FA031" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+                <k:KinectCircleButton Name="atrasCirculoMenuPrincipal" Label="Atras" Height="229" Margin="0,0,1165,243" Width="Auto" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" ContentForeground="{x:Null}" ContentPressedForeground="{x:Null}" Foreground="{x:Null}" Click="atrasCirculoMenuPrincipal_Click"  Visibility="Hidden">
+                    <k:KinectCircleButton.Background>
+                        <ImageBrush ImageSource="Resources/iconoAtras.png"/>
+                    </k:KinectCircleButton.Background>
+                </k:KinectCircleButton>
+                <k:KinectCircleButton Name="psicologicoCirculoMenuPrincipal" Click="psicologicoCirculoMenuPrincipal_Click"  Label="Pruebas psicologicas" Height="316" Margin="778,0,266,195" Width="Auto" Foreground="White" Background="#FF1FA031" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"/>
+                <k:KinectCircleButton Name="usuarioMenuPrincipal" Click="usuarioMenuPrincipal_Click" Margin="168,10,0,546" Width="200" Foreground="{x:Null}" HorizontalAlignment="Left">
+                    <k:KinectCircleButton.Background>
+                        <ImageBrush ImageSource="Resources/iconoUsuario.png" Stretch="UniformToFill">
+                        </ImageBrush>
+                    </k:KinectCircleButton.Background>
+                </k:KinectCircleButton>
+                <k:KinectCircleButton Name="configuracionMenuPrincipal" Click="configuracionMenuPrincipal_Click"  Margin="550,10,0,546" Width="200" Foreground="{x:Null}" HorizontalAlignment="Left">
+                    <k:KinectCircleButton.Background>
+                        <ImageBrush ImageSource="Resources/iconoConfiguracion.png" Stretch="UniformToFill">
+                        </ImageBrush>
+                    </k:KinectCircleButton.Background>
+                </k:KinectCircleButton>
+                <k:KinectCircleButton Name="acercaDeMenuPrincipal" Click="acercaDeMenuPrincipal_Click"  Margin="935,10,0,546" Width="200" Foreground="{x:Null}" HorizontalAlignment="Left">
+                    <k:KinectCircleButton.Background>
+                        <ImageBrush ImageSource="Resources/iconoAcercaDe.png" Stretch="UniformToFill">
+                        </ImageBrush>
+                    </k:KinectCircleButton.Background>
+                </k:KinectCircleButton>
+                <k:KinectScrollViewer Name="ScrollPruebasMenuPrincipal" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Center" Visibility="Hidden" Margin="264,242,22,189" Width="1118" >
+                    <StackPanel Orientation="Horizontal">
+                        <k:KinectTileButton Name="Prueba1MenuPrincipal" Click="Prueba1MenuPrincipal_Click"  Label="Prueba1" Background="#FF1FA031" Height="350" Width="350"></k:KinectTileButton>
+                        <k:KinectTileButton Name="Prueba2MenuPrincipal" Click="Prueba2MenuPrincipal_Click"  Label="Prueba2" Background="#FF1FA031" Height="350" Width="350"></k:KinectTileButton>
+                        <k:KinectTileButton Name="Prueba3MenuPrincipal" Click="Prueba3MenuPrincipal_Click"  Label="Prueba3" Background="#FF1FA031" Height="350" Width="350"></k:KinectTileButton>
+                        <k:KinectTileButton Name="Prueba4MenuPrincipal" Click="Prueba4MenuPrincipal_Click"  Label="Prueba4" Background="#FF1FA031" Height="350" Width="350"></k:KinectTileButton>
+                        <k:KinectTileButton Name="Prueba5MenuPrincipal" Click="Prueba5MenuPrincipal_Click"  Label="Prueba5" Background="#FF1FA031" Height="350" Width="350"></k:KinectTileButton>
+                    </StackPanel>
+                </k:KinectScrollViewer>
+                <k:KinectTileButton Name="botonMicrofonoMenuPrincipal" Margin="0,0,269,38" Height="116" Width="131" BorderBrush="{x:Null}" Foreground="{x:Null}" LabelBackground="{x:Null}" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="botonMicrofonoMenuPrincipal_Click">
+                    <Image Name="imagenMicrofono" Source="Resources/iconoMicrofonoDesactivado.png" Stretch="Uniform"/>
+                </k:KinectTileButton>
+                <k:KinectSensorChooserUI Name="sensorChooserUI" Margin="0,0,445,38" Height="116" Width="150" HorizontalAlignment="Right" VerticalAlignment="Bottom"></k:KinectSensorChooserUI>
+                <Image x:Name="image" Height="171" Margin="10,0,0,9" Width="292" Source="Resources/logotipoVME.png" Stretch="UniformToFill" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+            </Grid>
+        </k:KinectRegion>
+    </Grid>
+</Window>

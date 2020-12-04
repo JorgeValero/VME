@@ -1,0 +1,61 @@
+﻿<Window x:Class="VME.PruebaReflejos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VME"
+        mc:Ignorable="d"
+        Title="PruebaReflejos" Height="406.04" Width="670.491" WindowStartupLocation="CenterScreen" Icon="Resources/logotipoVME-sin fondos.ico" Closing="Window_Closing">
+    <Grid x:Name="grid" Background="#FF1D1B1B">
+        <TabControl x:Name="tabControl" Background="#FF1D1B1B" HorizontalAlignment="Left" Height="375" VerticalAlignment="Top" Width="662">
+            <TabItem Header="Inicio" x:Name="tabInicio" Loaded="tabInicio_Loaded" >
+                <Grid x:Name="grid1" Background="#FF1D1B1B">
+                    <Label x:Name="labeltitulo" Content="Prueba de reflejos" Foreground="White"  HorizontalAlignment="Left" Margin="194,10,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+                    <TextBlock x:Name="instrucciones1" Foreground="White"  HorizontalAlignment="Left" Margin="17,62,0,0" TextWrapping="Wrap" Text="A continución vamos a comprobar cómo estás de reflejos, para ello te pondremos una serie de botones (rojos y verdes) y tendras que pulsar los botones verdes." VerticalAlignment="Top" Height="49" Width="619"/>
+                    <TextBlock x:Name="instrucciones2" Foreground="White"  HorizontalAlignment="Left" Margin="17,116,0,0" TextWrapping="Wrap" Text="Si pulsas un botón rojo se te contabilizará puntos negativos, si aciertas sumaras uno. La prueba se repetirá 5 veces y al final te daremos los resultados." VerticalAlignment="Top" Height="45" Width="619"/>
+                    <TextBlock x:Name="instrucciones3" Foreground="White"  HorizontalAlignment="Left" Margin="17,192,0,0" TextWrapping="Wrap" Text="Por favor, indique que quiere usar para realizar la prueba:" VerticalAlignment="Top" Height="27" Width="619"/>
+                    <Image x:Name="botonKinect" HorizontalAlignment="Right" Height="66" Margin="0,251,367,0" VerticalAlignment="Top" Width="134" Source="Resources/iconoKinectReal.png" MouseUp="botonKinect_MouseUp"/>
+                    <Image x:Name="botonTactil" HorizontalAlignment="Right" Height="81" Margin="0,236,164,0" VerticalAlignment="Top" Width="67" Source="Resources/iconoTactilClaro.png" MouseUp="botonTactil_MouseUp"/>
+                    <Button x:Name="microfono"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="584,287,0,0" Click="microfono_click" Height="50">
+                        <Image Name="imagenMicrofono" Source="Resources/iconoMicrofonoDesactivado.png"/>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Kinect" Background="#FF1D1B1B" x:Name="tabKinect" >
+                <Grid x:Name="grid2" Background="#FF1D1B1B">
+                    <Label x:Name="contadorInicioKinect" Foreground="White" Content="3" HorizontalAlignment="Left" Margin="289,74,0,0" VerticalAlignment="Top" Height="183" Width="91" FontSize="150" Visibility="Hidden"/>
+                    <Image x:Name="KinectImage" HorizontalAlignment="Left" Height="347" VerticalAlignment="Top" Width="656" Stretch="UniformToFill"/>
+                    <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="31,255,0,0" Height="36" Visibility="Hidden"  />
+                    <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="31,51,0,0" Height="36" Visibility="Hidden" />
+                    <Button x:Name="button3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="535,51,0,0" Height="36" Visibility="Hidden" />
+                    <Button x:Name="button4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="535,255,0,0" Height="36" Visibility="Hidden" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ratón/Tactil" Background="#FF1D1B1B" x:Name="tabRatonTactil">
+                <Grid x:Name="grid3" Background="#FF1D1B1B">
+                    <Label x:Name="contadorInicio" Foreground="White" Content="3" HorizontalAlignment="Left" Margin="289,74,0,0" VerticalAlignment="Top" Height="183" Width="91" FontSize="150"/>
+                    <Button x:Name="boton1" HorizontalAlignment="Left" Content="1" Margin="28,40,0,0" VerticalAlignment="Top" Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton2" HorizontalAlignment="Left" Content="2" Margin="28,109,0,0" VerticalAlignment="Top" Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton3" HorizontalAlignment="Left" Content="3" Margin="28,181,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton4" HorizontalAlignment="Left" Content="4" Margin="28,256,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton5" HorizontalAlignment="Left" Content="5" Margin="493,40,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton6" HorizontalAlignment="Left" Content="6" Margin="493,109,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton7" HorizontalAlignment="Left" Content="7" Margin="493,181,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                    <Button x:Name="boton8" HorizontalAlignment="Left" Content="8" Margin="493,256,0,0" VerticalAlignment="Top"  Width="138" Height="48" Click="botonesPrueba_Click" FontSize="36" Foreground="White" Visibility="Hidden"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Resultados" Background="#FF1D1B1B" x:Name="tabResultados" >
+                <Grid x:Name="grid4" Background="#FF1D1B1B">
+                    <Label x:Name="felicidadesPruebaReflejos" Content="Felicidades, has completado la prueba de reflejos" Foreground="White"  HorizontalAlignment="Left" Margin="63,18,0,0" VerticalAlignment="Top" FontSize="22" Width="516"/>
+                    <Label x:Name="resultadoPruebaReflejos1" Foreground="White"   Content="Éstos son tus resultados de la prueba:" HorizontalAlignment="Left" Margin="16,72,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelAciertos" Foreground="White"  Content="Aciertos: " HorizontalAlignment="Left" Margin="123,110,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelFallos" Foreground="White"  Content="Fallos: " HorizontalAlignment="Left" Margin="123,155,0,0" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="analisisPrueba" Foreground="White" HorizontalAlignment="Left" Margin="16,198,0,0" TextWrapping="Wrap" Text="Aqui te analizo" VerticalAlignment="Top" Width="615" Height="47"/>
+                    <Button Foreground="White" Background="#FF1FA031" x:Name="guardarYSalir" Content="Guardar y Salir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="521,286,0,0" Click="guardarYSalir_Click" Height="41"/>
+                    <Button Foreground="White" Background="#FF1FA031" x:Name="salirSinGuardar" Content="Salir sin guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Margin="365,286,0,0" Click="salirSinGuardar_Click" Height="41"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
